@@ -83,7 +83,8 @@ public class Main {
 //        Loops obj = new Loops();
 //        Arrays obj = new Arrays();
 //        Methods obj = new Methods();
-        OOPs obj = new OOPs();
+//        OOPs obj = new OOPs();
+        Inheritance obj = new Inheritance();
         obj.HelloWorld();
     }
 }
