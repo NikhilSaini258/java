@@ -1,6 +1,10 @@
 import java.lang.*;
 import java.util.Scanner;
 
+// user defined package
+// * is used to import all classes inside package. If we have sub-packages, we need to add an extra import statement for classes inside subpackage
+import demoPackage.*;
+
 public class Main {
     public static void main(String[] args) {
         System.out.print("Hello world WITHOUT new line\t");
@@ -84,7 +88,15 @@ public class Main {
 //        Arrays obj = new Arrays();
 //        Methods obj = new Methods();
 //        OOPs obj = new OOPs();
-        Inheritance obj = new Inheritance();
-        obj.HelloWorld();
+//        Inheritance obj = new Inheritance();
+//        obj.HelloWorld();
+
+        // user-defined packages
+        hello h_obj = new hello();
+        h_obj.display();
+
+        // directly using user defined package, without an import statement
+        demoPackage.innerPackage.innerHello ih_obj = new demoPackage.innerPackage.innerHello();
+        ih_obj.display();
     }
 }
