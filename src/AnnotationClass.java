@@ -9,11 +9,12 @@
     @SafeVarargs -> Used in case of generic data type of the private or final method of the class
     @FunctionalInterface -> If an interface has only one method, it is called functional interface
 
-    @Retention -> 
-    @Documented ->
-    @Target ->
-    @Inheritance ->
-    @Repeatable ->
+ Build-in Annotation which will affect user defined annotation
+    @Retention -> Retention policies determine at which point an annotation is discarded
+    @Documented -> To ensure that our custom annotations are shown in the documentation, we use @Documented annotation to annotate our custom annotations.
+    @Target -> Define where we can use user defined annotation, like function level, class level, etc
+    @Inheritance -> It means child class also get user defined annotation by-default
+    @Repeatable -> We can use user defined annotation multiple times
 */
 
 import java.util.List;
