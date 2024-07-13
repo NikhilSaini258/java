@@ -1,4 +1,4 @@
-// Object class is the parent class of all classes in Java (including user defined classes)
+// "Object" class is the parent class of all classes in Java (including user defined classes)
 
 class MyClass_object {
 
@@ -11,7 +11,7 @@ class MyClass_object_2 {
         // I'm making equals check the hashcode of the object
         return this.hashCode() == o.hashCode();
     }
-    // Cannot override below 2 methods since they are "final" in the Object class and it is internally used by JVM for multithreading
+    // Cannot override below 2 methods since they are "final" in the Object class, and it is internally used by JVM for multithreading
     // public void notify() {}
     // public void wait() {}
 }
@@ -28,5 +28,8 @@ public class LangPackageClass {
         MyClass_object o3 = new MyClass_object();
         System.out.println(o3.hashCode());
         System.out.println(o3.toString());
+
+        Object o4 = new MyClass_object_2();
+        System.out.println(o4.hashCode());
     }
 }
