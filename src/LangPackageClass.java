@@ -7,7 +7,8 @@ class MyClass_object {
 class MyClass_object_2 {
     public String toString() { return "MyClass_object_2::toString"; }
     public int hashCode() { return 100; }
-    public boolean isEqual (Object o) {
+    @Override
+    public boolean equals (Object o) {
         // I'm making equals check the hashcode of the object
         return this.hashCode() == o.hashCode();
     }
@@ -28,8 +29,13 @@ public class LangPackageClass {
         MyClass_object o3 = new MyClass_object();
         System.out.println(o3.hashCode());
         System.out.println(o3.toString());
+        System.out.println(o3);         // Direct object printing will call toString of that class
 
         Object o4 = new MyClass_object_2();
         System.out.println(o4.hashCode());
+
+        Object o5 = new MyClass_object_2();
+        System.out.println(o5.equals(o4));
+        System.out.println(o5.equals(o3));
     }
 }
