@@ -1,6 +1,6 @@
 // Inner classes can be implemented using four different ways:
 // 1. Inner class as class member
-// 2. Inner class in some method
+// 2. Inner class inside method
 // 3. Anonymous inner class
 // 4. Static Inner class
 
